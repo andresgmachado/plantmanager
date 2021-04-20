@@ -11,7 +11,7 @@ export function Button(){
     return(
         <TouchableOpacity style={styles.container}>
             <Text style={styles.text}>
-                Confirmar
+                Salvar
             </Text>
         </TouchableOpacity>
     )
