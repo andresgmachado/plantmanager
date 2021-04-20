@@ -10,9 +10,14 @@ import colors from '../../styles/colors';
 import fonts from '../../styles/fonts'
 import {Entypo} from '@expo/vector-icons'
 import wateringimg from '../assets/watering.png';
+import { useNavigation } from '@react-navigation/core';
 
 export function Welcome() {
+  const navigation = useNavigation();
 
+  function handleStart(){
+    navigation.navigate('UserIdentification');
+  }
 
   return (
     <View style={styles.container}>
@@ -34,7 +39,10 @@ export function Welcome() {
         sempre que precisar.
         </Text>
 
-        <TouchableOpacity style={styles.button} >
+        <TouchableOpacity 
+          style={styles.button}
+          onPress={handleStart}
+        >
           <Text style={styles.buttonIcon}>
              <Entypo name="chevron-thin-right"/>
           </Text>

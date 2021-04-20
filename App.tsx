@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserIdentification } from './src/pages/UserIdentification';
+import Routes  from './src/Routes/';
 import {
   useFonts,
   Jost_400Regular,
@@ -18,7 +18,7 @@ export default function App() {
     return  <AppLoading/>
  
     return (
-    <UserIdentification/>
+    <Routes/>
   );
 }
 
