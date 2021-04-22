@@ -2,7 +2,7 @@ import React from 'react';
 import {Image, Text, View, StyleSheet} from 'react-native';
 import colors from '../../styles/colors';
 import {getStatusBarHeight} from 'react-native-iphone-x-helper'
-import userimg from '../assets/waterdrop.png'
+import userimg from '../assets/download.png'
 import fonts from '../../styles/fonts';
 
 export function Header(){
@@ -24,13 +24,13 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginTop: getStatusBarHeight()
+        marginTop: getStatusBarHeight()+20
         
     },
     image:{
-        height: 70,
-        width: 70,
-        borderRadius: 40
+        height: 85,
+        width: 85,
+        borderRadius: 40,
     },
     greeting:{
         fontSize: 32,

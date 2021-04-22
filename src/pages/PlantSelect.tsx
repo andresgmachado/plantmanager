@@ -33,12 +33,12 @@ export function PlantSelect(){
     const [enviromentsSelected, setenviromentsSelected] = useState('all');
     const [loading, setLoading] = useState(true);
     const [page, setPage] = useState(1);
-    const [loadingMore, setloadingMore] = useState(false);
+    const [loadingMore, setloadingMore] = useState(true);
     const [loadingAll, setLoadingAll]= useState(false);
 
     function handleenviromentsSelected(enviroment: string){
         setenviromentsSelected(enviroment);
-        if(enviroment == 'all')
+        if(enviroment === 'all')
         return setFilteredPlants(plants);
 
         const filtred = plants.filter(plant =>
@@ -125,7 +125,7 @@ export function PlantSelect(){
                 )}
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                contentContainerStyle={styles.envList}
+                contentContainerStyle={styles.header}
             />
         </View>
 

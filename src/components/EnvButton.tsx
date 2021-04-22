@@ -28,13 +28,16 @@ export function EnvButton({title, active =false, ...rest}: EnviButtonProps){
 
 const styles = StyleSheet.create({
     container:{
+        flex: 1,
         backgroundColor: colors.shape,
         height: 40,
         width: 76,
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 12,
-        marginHorizontal: 5
+       
+        margin: 10
+
     },
     containerActive:{
         backgroundColor: colors.green_light
