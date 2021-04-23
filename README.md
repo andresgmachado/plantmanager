@@ -4,7 +4,7 @@
 <img src="https://github.com/andresgmachado/plantmanager/blob/main/src/assets/watering.png" alt="bkg"/>
 <p>Projeto em React-Native realizando durante a NLW #5</p>
 
-<img src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=flat" />
+<img src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&logoWidth=250" />
 
 </head>
 <body>
