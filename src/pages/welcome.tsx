@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { 
         StyleSheet, 
         Text, 
@@ -11,12 +11,29 @@ import fonts from '../../styles/fonts'
 import {Entypo} from '@expo/vector-icons'
 import wateringimg from '../assets/watering.png';
 import { useNavigation } from '@react-navigation/core';
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 export function Welcome() {
+
+  const [userName, SetUserName] = useState<string>();
+
+  useEffect(()=>{
+      async function loadStorageUserName() {
+          const User = await AsyncStorage.getItem('@plantmanager:user');
+          SetUserName(User || '');
+      }
+      loadStorageUserName();
+  },[]);
+
+
   const navigation = useNavigation();
 
   function handleStart(){
+    if (!userName){
     navigation.navigate('UserIdentification');
+    } else{
+      navigation.navigate('PlantSelect');
+    }
   }
 
   return (
