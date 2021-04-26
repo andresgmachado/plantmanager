@@ -20,7 +20,7 @@
     <td>2.0.1</td>
   </tr>
   <tr>
-    <td>react-native</td>
+    <td><img src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&logoWidth=30" /></td>
     <td>0.63.2</td>
   </tr>
     <tr>
@@ -32,7 +32,7 @@
     <td>15.3.0</td>
   </tr>
         <tr>
-    <td>expo</td>
+    <td><img src="https://play-lh.googleusercontent.com/algsmuhitlyCU_Yy3IU7-7KYIhCBwx5UJG4Bln-hygBjjlUVCiGo1y8W5JNqYm9WW3s=s180-rw"/></td>
     <td>4.4.1</td>
   </tr>
   
